@@ -2,3 +2,34 @@ h1 {
   text-align: center;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  max-width: 200px;
+  background-color: #E0E0E0;
+  text-align: center;
+  display: inline-block;
+  margin: 30px;
+  border: solid 1px;
+}
+
+.name {
+  font-weight: 700;
+  size: 18px;
+}
+
+.description {
+  font-weight: 400;
+  size: 14px;
+}
