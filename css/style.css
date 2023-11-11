@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  color: brown;
+}
+
+h1 {
+  color: blueviolet;
+}
+
+.classcolor {
+  color: blue;
+}
+
+#idcolor {
+  color: rgb(0, 57, 57);
+}
+
+.classcolor-1 {
+  color: rgb(46, 91, 0);
+}
+
+li p {
+  color: gold;
+}
+
+b {
+  color: rgb(78, 77, 124);
+}
+
+ul li {
+  color: rgb(239, 167, 167);
+}
+
+#namecolor {
+  color: yellowgreen;
+}
+
+.firstdescription {
+  color: orange;
+}
