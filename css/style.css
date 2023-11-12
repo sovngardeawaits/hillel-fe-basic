@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #909090;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #303030;
+    font-weight: 700;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+.card {
+    width: 300px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+    margin: auto;
+    border: solid 1px transparent;
+}
+
+img {
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+hr {
+    margin: 10px;
+}
+
+a {
+    padding-left: 165px;
+    text-decoration: none;
+    color: blue;
+}
