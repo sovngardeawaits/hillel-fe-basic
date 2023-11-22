@@ -1,0 +1,22 @@
+html {
+  text-align: center;
+}
+
+h2 {
+  margin: 50px 0 0;
+}
+
+table {
+  margin: auto;
+  border: 1px solid;
+}
+
+td,
+th,
+tr {
+  padding: 3px;
+}
+
+colgroup {
+  background-color: yellow;
+}
