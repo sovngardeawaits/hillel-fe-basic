@@ -1,0 +1,124 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.25px;
+  }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #EEEFF1;
+}
+
+nav {
+  padding-top: 80px;
+  padding-left: 400px;
+}
+
+.write-me {
+  padding: 150px 0 140px 400px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 42px;
+}
+
+.bluelink {
+  color: #34547a;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.description {
+  color: #727272;
+  width: 540px;
+  padding: 60px 0 65px 0;
+}
+
+.btn {
+  width: 225px;
+  height: 65px;
+  background-color: #34547A;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.about {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37.5px;
+}
+
+.grey-text {
+  width: 540px;
+  margin: auto;
+  color: #727272;
+}
+
+.projects {
+  background-color: #34547A;
+  height: 250px;
+  margin: auto;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.project-list {
+  display: inline-block;
+  margin-right: 50px;
+  padding-top: 100px;
+}
+
+.project-list img {
+  margin-right: 20px;
+}
+
+.project-list p {
+  margin: 0;
+}
+
+.amount {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24.6px;
+  float: left;
+}
+
+.video {
+  text-align: center;
+  padding-top: 100px;
+}
+
+iframe {
+  padding: 57px 0 100px 0;
+}
+
+footer {
+  background-color: #34547A;
+  color: #FFFFFF;
+  padding: 50px 0 50px 400px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24.6px;
+}
+
+.copypast {
+  font-size: 13px;
+  line-height: 21.3px;
+}
