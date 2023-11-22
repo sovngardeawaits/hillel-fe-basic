@@ -3,12 +3,12 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 26.25px;
-  }
+}
 
 body {
   padding: 0;
   margin: 0;
-  background-color: #EEEFF1;
+  background-color: #eeeff1;
 }
 
 nav {
@@ -45,9 +45,9 @@ h1 {
 .btn {
   width: 225px;
   height: 65px;
-  background-color: #34547A;
+  background-color: #34547a;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .about {
@@ -69,10 +69,10 @@ h2 {
 }
 
 .projects {
-  background-color: #34547A;
+  background-color: #34547a;
   height: 250px;
   margin: auto;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -107,8 +107,8 @@ iframe {
 }
 
 footer {
-  background-color: #34547A;
-  color: #FFFFFF;
+  background-color: #34547a;
+  color: #ffffff;
   padding: 50px 0 50px 400px;
 }
 
