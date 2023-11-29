@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  color: #1d2f38;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+header {
+  box-shadow: 0px 1px 8px 0px rgba(83, 109, 122, 0.29);
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  margin-left: auto;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.header-box ul {
+  list-style: none;
+}
+
+.header-box {
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-box li {
+  display: flex;
+  align-items: center;
+}
+
+.header-box a {
+  text-decoration: none;
+  color: #1d2f38;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+
+.gap-3 {
+  gap: 3px;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.description {
+  background-color: #e3ebf1;
+  padding: 50px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.bitter {
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+}
+
+.green {
+  color: #10843f;
+}
+
+.template h1 {
+  font-size: 47px;
+}
+
+.black {
+  color: #333333;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.description img {
+  margin-right: 50px;
+}
+
+.description p {
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
+.description button {
+  width: 161px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #17a550;
+  border-style: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+}
+
+.blog {
+  margin-top: 77px;
+  padding-bottom: 55px;
+}
+
+.blog h2 {
+  font-size: 38px;
+  margin-bottom: 33px;
+}
+
+.blog h3 {
+  font-size: 30px;
+}
+
+.blog p {
+  font-size: 15px;
+  width: 546px;
+  margin-top: 13px;
+}
+
+.cards-blog {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards-blog img {
+  max-width: 245px;
+  max-height: 150px;
+}
+
+.cards-blog p {
+  margin-left: 15px;
+  width: 256px;
+}
+
+.card-blog {
+  display: flex;
+  align-items: center;
+}
+
+.blog-articles {
+  font-size: 16px;
+  gap: 4px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.blog-articles a {
+  text-decoration: none;
+  color: #1d2f38;
+}
+
+.view-list {
+  background-image: url(../img/list_background.png);
+  height: 112px;
+  font-size: 28px;
+  justify-content: space-between;
+  margin-bottom: 97px;
+}
+
+.view-list img {
+  margin-left: 30px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.view-list button {
+  width: 111px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #17A550;
+  border-style: none;
+  margin-right: 40px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.product-reviews h2 {
+  font-size: 38px;
+  margin-bottom: 33px;
+}
+
