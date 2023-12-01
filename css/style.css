@@ -237,7 +237,6 @@ header {
 
 .product-card {
   position: relative;
-  display: inline-block;
   max-width: 357px;
   font-size: 15px;
 }
@@ -266,16 +265,16 @@ header {
 
 .product-description h3 {
   font-size: 30px;
-  padding-top: 24px;
+  margin-top: 24px;
   margin-bottom: 13px;
 }
 
 .product-description p {
   max-width: 300px;
-  padding-bottom: 39px;
+  margin-bottom: 39px;
 }
 
-.product-description {
+.product-description-background {
   background-color: #f8f9fb;
 }
 
