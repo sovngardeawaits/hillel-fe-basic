@@ -294,7 +294,7 @@ header {
 }
 
 .newsletter {
-  background-image: url(/img/newsletter_background.png);
+  background-image: url(../img/newsletter_background.jpg);
   margin-bottom: 100px;
 }
 
@@ -438,11 +438,11 @@ footer h3 {
 .copyright {
   border-top: 1px solid;
   padding-top: 20px;
-  border-color: #536D7A;
+  border-color: #536d7a;
 }
 
 .border-footer {
-  border-top: 1px solid #536D7A;
+  border-top: 1px solid #536d7a;
 }
 
 .other {
@@ -458,7 +458,5 @@ footer h3 {
 
 .other p {
   font-size: 11px;
-  color: #1D2F38;
+  color: #1d2f38;
 }
-
-
