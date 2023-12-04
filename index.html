@@ -13,87 +13,100 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#" class="bluelink">HOMEPAGE</a>
-            <a href="#">ABOUT AUTHOR</a>
-            <a href="#">WORKS</a>
-            <a href="#">PROCESS</a>
-            <a href="#">CONTACTS</a>
-        </nav>
+        <div class="container nav-list">
+            <nav>
+                <ul>
+                    <li><a class="text-blue" href="#">HOMEPAGE</a></li>
+                    <li><a href="#">ABOUT AUTHOR</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">PROCESS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="write-me">
-            <h1>Design and layout</h1>
-            <p class="description">Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the
-                standard "fish" for Latin texts since the early 16th century.</p>
-            <button class="btn">WRITE ME</button>
+        <section class="main">
+            <div class="container">
+                <h1>Design and layout</h1>
+                <p>Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish"
+                    for Latin texts since the early 16th century.</p>
+                <button>WRITE ME</button>
+            </div>
         </section>
         <section class="about">
-            <h2>About me</h2>
-            <p class="grey-text">About meLorem Ipsum is fish text often used in print and web design. Lorem Ipsum has
-                been the standard
-                "fish" for Latin texts since the early 16th century.</p>
-        </section>
-        <section class="projects">
-            <div class="project-list">
-                <img src="img/icon/project.svg" alt="project">
-                <div style="display: inline-block;">
-                    <p class="amount">40+</p>
-                    <p>projects</p>
-                </div>
-            </div>
-            <div class="project-list">
-                <img src="img/icon/project.svg" alt="project">
-                <div style="display: inline-block;">
-                    <p class="amount">40+</p>
-                    <p>projects</p>
-                </div>
-            </div>
-            <div class="project-list">
-                <img src="img/icon/project.svg" alt="project">
-                <div style="display: inline-block;">
-                    <p class="amount">40+</p>
-                    <p>projects</p>
-                </div>
-            </div>
-            <div class="project-list">
-                <img src="img/icon/project.svg" alt="project">
-                <div style="display: inline-block;">
-                    <p class="amount">40+</p>
-                    <p>projects</p>
-                </div>
-            </div>
-            <div class="project-list">
-                <img src="img/icon/project.svg" alt="project">
-                <div style="display: inline-block;">
-                    <p class="amount">40+</p>
-                    <p>projects</p>
-                </div>
-            </div>
-            <div class="project-list">
-                <img src="img/icon/project.svg" alt="project">
-                <div style="display: inline-block;">
-                    <p class="amount">40+</p>
-                    <p>projects</p>
-                </div>
+            <div class="container text-center">
+                <h2>About me</h2>
+                <p>About meLorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the
+                    standard "fish" for Latin texts since the early 16th century.</p>
             </div>
         </section>
-        <section class="video">
-            <h2>How do I work</h2>
-            <p class="grey-text">Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the
-                standard "fish" for Latin texts since the early 16th century.</p>
-            <iframe width="1110px" height="600px" src="https://www.youtube.com/embed/mAg8UyDt_sw?si=rm3ddE-iL9QLs2Qo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+        <section class="cards">
+            <div class="container">
+                <div class="card">
+                    <img src="./img/icon/project.svg" alt="project">
+                    <div class="inline-block">
+                        <p class="weight">40+</p>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/icon/project.svg" alt="project">
+                    <div class="inline-block">
+                        <p class="weight">40+</p>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/icon/project.svg" alt="project">
+                    <div class="inline-block">
+                        <p class="weight">40+</p>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/icon/project.svg" alt="project">
+                    <div class="inline-block">
+                        <p class="weight">40+</p>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/icon/project.svg" alt="project">
+                    <div class="inline-block">
+                        <p class="weight">40+</p>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/icon/project.svg" alt="project">
+                    <div class="inline-block">
+                        <p class="weight">40+</p>
+                        <p>projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="description">
+            <div class="container text-center">
+                <h2>How do I work</h2>
+                <p>Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish"
+                    for Latin texts since the early 16th century.</p>
+                <iframe width="1110px" height="600px"
+                    src="https://www.youtube.com/embed/mAg8UyDt_sw?si=rm3ddE-iL9QLs2Qo" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </section>
     </main>
     <footer>
-        <div>
+        <div class="container copyright">
             <h3>John Smith</h3>
-            <p class="copypast">(c) 2018. All rights reserved.</p>
+            <p>(c) 2018. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 
 </html>
