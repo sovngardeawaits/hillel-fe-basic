@@ -184,3 +184,11 @@ input[type="checkbox"]:checked {
   justify-content: center;
   margin-top: 20px;
 }
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.gap-65 {
+  gap: 65px;
+}

@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Регистрация</title>
 </head>
+
 <body>
     <div class="blur-wrapper">
         <div class="container">
-            <div class="switch-border flex">
-                <div class="flex items-center space-around gap-48">
-                    <div class="green-background-border space-around flex items-center">
-                        <p class="no-cursor">Вход</p>
+            <div class="switch-border space-around flex-end flex">
+                <div class="flex items-center gap-65">
+                    <div>
+                        <a class="decoration-none" href="./index.html"><p>Вход</p></a>
                     </div>
-                    <div><a class="decoration-none" href="./registration.html">
-                            <p>Регистрация</p>
-                        </a>
+                    <div class="green-background-border space-around flex items-center">
+                            <p class="no-cursor">Регистрация</p>
                     </div>
                 </div>
             </div>
-            <h1>Вход</h1>
-            <form>
+            <h1>Регистрация</h1>
+            <form action="https://fom.in.ua/echo" method="post">
                 <div class="form">
                     <div>
                         <label for="email"></label>
                         <input type="email" id="email" name="email" placeholder="Введите E-mail" required>
                     </div>
-
                     <div>
                         <label for="password"></label>
                         <input type="password" id="password" name="password" placeholder="Пароль" required>
                     </div>
+                    <div>
+                        <label for="confirm-password"></label>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                            placeholder="Повторить пароль" required>
+                    </div>
                 </div>
 
                 <div class="space-between flex items-center">
-                    <div class="gap-10 flex"><input type="checkbox" id="checkbox" name="checkbox"
-                            onchange="handleChange(this)">
-                        <label for="checkbox">Запомнить меня</label>
+                    <div class="gap-10 flex"><input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Получать новости</label>
                     </div>
-                    <div><a class="text-green" href="#">
-                            <p>Забыли пароль?</p>
-                        </a></div>
                 </div>
-                <button class="btn" type="submit">Войти</button>
+                <button class="btn" type="submit">Зарегистрироваться</button>
             </form>
             <div class="flex gap-15 justify-center">
-                <p class="text-green">Еще нет аккаунта?</p>
-                <a class="text-white" href="./registration.html">
-                    <p>Зарегистрироваться</p>
+                <p class="text-green">Уже есть аккаунт?</p>
+                <a class="text-white" href="./index.html">
+                    <p>Авторизоваться</p>
                 </a>
-            </div>
-            <div>
-                <p class="text-green text-center mntop-30">Или войдите через</p>
-                <div class="soc">
-                    <a href="https://facebook.com/"><img src="./img/icons/facebook.svg" alt="facebook"></a>
-                    <a href="https://www.instagram.com/"><img src="./img/icons/instagram.svg" alt="instagram"></a>
-                    <a href="https://www.linkedin.com/"><img src="./img/icons/linkedin.svg" alt="linkedin"></a>
-                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
