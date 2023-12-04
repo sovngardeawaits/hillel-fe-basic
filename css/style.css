@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #ffffff;
+}
+
+body {
+  background-image: url(../img/background.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(22, 21, 21, 0.5);
+}
+
+.blur-wrapper {
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
+  max-width: 500px;
+  height: 100vh;
+  margin-left: auto;
+  padding-top: 60px;
+}
+
+.blur-wrapper h1 {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 29px;
+  font-size: 30px;
+}
+
+.gap-48 {
+  gap: 48px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.container {
+  width: 340px;
+  margin: auto;
+}
+
+.switch-border {
+  border: 1px solid #153416;
+  width: 340px;
+  height: 36px;
+  border-radius: 30px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.switch-border p {
+  color: #ffffff;
+}
+
+.green-background-border {
+  border: 1px solid #153416;
+  width: 168px;
+  height: 32px;
+  border-radius: 30px;
+  background-color: #153416;
+  margin: 2px;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.no-cursor {
+  cursor: default;
+}
+
+.block {
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  border: 1px solid;
+  width: 340px;
+  height: 44px;
+  border-radius: 30px;
+  background: #929191;
+  border-style: none;
+  padding-left: 20px;
+}
+
+.form input::placeholder {
+  color: #ffffff;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  backdrop-filter: blur(5px);
+  appearance: none;
+}
+
+.text-green {
+  color: #153416;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.btn {
+  width: 340px;
+  height: 44px;
+  border-radius: 30px;
+  background: #153416;
+  color: #ffffff;
+  border-style: none;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mntop-30 {
+  margin-top: 30px;
+}
+
+.soc {
+display: flex;
+gap: 20px;
+justify-content: center;
+margin-top: 20px;
+}
