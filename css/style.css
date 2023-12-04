@@ -137,7 +137,6 @@ input[type="checkbox"] {
   height: 15px;
   border-radius: 2px;
   border: 1px solid #d9d9d9;
-  backdrop-filter: blur(5px);
   appearance: none;
 }
 
