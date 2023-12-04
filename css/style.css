@@ -140,6 +140,13 @@ input[type="checkbox"] {
   appearance: none;
 }
 
+input[type="checkbox"]:checked {
+  background-color: #153416;
+  background-image: url(../img/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .text-green {
   color: #153416;
 }
@@ -172,8 +179,8 @@ input[type="checkbox"] {
 }
 
 .soc {
-display: flex;
-gap: 20px;
-justify-content: center;
-margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
