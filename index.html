@@ -10,117 +10,139 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-box">
-            <a href="#" class="logo">
-                Amelia F
-            </a>
-            <nav>
-                <ul class="nav-list">
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">О нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Как мы работаем</a>
-                    </li>
-                    <li>
-                        <a href="#"> Наши работы</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="bg-green header-padding">
+        <div class="container flex gap-130 items-center">
+            <div class="vetrino fs-36"><a class="no-decoration black-text" href="#">
+                    <p>Amelia F</p>
+                </a></div>
+            <div>
+                <nav class="flex gap-90">
+                    <a class="no-decoration black-text" href="#">
+                        <p>Главная</p>
+                    </a>
+                    <a class="no-decoration black-text" href="#">
+                        <p>О нас</p>
+                    </a>
+                    <a class="no-decoration black-text" href="#">
+                        <p>Кас мы работаем</p>
+                    </a>
+                    <a class="no-decoration black-text" href="#">
+                        <p>Наши работы</p>
+                    </a>
+                    <a class="no-decoration black-text" href="#">
+                        <p>Контакты</p>
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <section class="container">
-            <div class="order">
-                <h1>Amelia Flowers</h1>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-
-                <div class="buttons">
-                    <button class="grn-btn">Заказать букет</button>
-                    <button class="border-btn">Помощь флориста</button>
+        <section class="order container pgbot-120">
+            <div class="flex gap-30">
+                <div class="mntop-180">
+                    <h1 class="vetrino fs-62">Amelia Flowers</h1>
+                    <p class="maxwidth-540 mntop-60">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                    <div class="mntop-40 flex gap-65">
+                        <button class="greenbg-btn">Заказать букет</button>
+                        <button class="greenborder-btn">Помощь флориста</button>
+                    </div>
                 </div>
+                <div><img src="./img/flower1.png" alt="flower1"></div>
             </div>
-            <img src="img/flower1.png" alt="flower1" width="100%">
-        </section>
-        <div class="about">
-            <h2>О НАС</h2>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        </div>
-        <div class="offer container">
-            <div>
-                <img src="img/best_prices.svg" alt="best_prices">
-                <p>Лучшие цены</p>
-            </div>
-            <div>
-                <img src="img/individual_selection.svg" alt="individual_selection">
-                <p>Индивидуальный подбор</p>
-            </div>
-            <div>
-                <img src="img/fast_delivery.svg" alt="fast_delivery">
-                <p>Быстрая доставка</p>
-            </div>
-            <div>
-                <img src="img/fresh_flowers.svg" alt="fresh_flowers">
-                <p>Всегда свежие цветы</p>
-            </div>
-            <div>
-                <img src="img/bonus_system.svg" alt="bonus_system">
-                <p>Бонусная система</p>
-            </div>
-        </div>
-        <section class="container description">
-            <img src="img/flower2.png" alt="flower2">
-            <div class="workdesc">
-                <h2>Как мы работаем</h2>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+            <div class="text-center mntop-120">
+                <h2 class="vetrino fs-32">О НАС</h2>
+                <p class="maxwidth-540 mn-auto-top60">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                    вэб-дизайне. Lorem Ipsum является
                     стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
             </div>
         </section>
-        <section class="works">
-            <h2>Наши работы</h2>
-            <div class="cards container">
-                <div class="card"><img src="img/card1.png" alt="card1">
-                    <p>Букет” Флоренция”</p>
+        <section class="bg-green">
+            <div class="container list-padding flex gap-45">
+                <div class="flex flex-column items-center">
+                    <img src="./img/best_prices.svg" alt="best_prices">
+                    <p class="mntop-20 montserrat">Лучшие цены</p>
                 </div>
-                <div class="card"><img src="img/card2.png" alt="card2">
-                    <p>Букет” Флоренция”</p>
+                <div class="flex flex-column items-center">
+                    <img src="./img/individual_selection.svg" alt="individual_selection">
+                    <p class="mntop-20 montserrat">Индивидуальный подбор</p>
                 </div>
-                <div class="card"><img src="img/card3.png" alt="card3">
-                    <p>Букет” Флоренция”</p>
+                <div class="flex flex-column items-center">
+                    <img src="./img/fast_delivery.svg" alt="fast_delivery">
+                    <p class="mntop-20 montserrat">Быстрая доставка</p>
+                </div>
+                <div class="flex flex-column items-center">
+                    <img src="./img/fresh_flowers.svg" alt="fresh_flowers">
+                    <p class="mntop-20 montserrat">Всегда свежие цветы</p>
+                </div>
+                <div class="flex flex-column items-center">
+                    <img src="./img/bonus_system.svg" alt="bonus_system">
+                    <p class="mntop-20 montserrat">Бонусная система</p>
+                </div>
+            </div>
+        </section>
+        <section class="description container">
+            <div class="mntop-120 flex items-center gap-30">
+                <div>
+                    <img src="./img/flower2.png" alt="flower2">
+                </div>
+                <div>
+                    <h2 class="vetrino fs-32 text-center">
+                        Как мы работаем
+                    </h2>
+                    <p class="text-center maxwidth-540 mn-auto-top60">Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                </div>
+            </div>
+            <div class="mntop-120 pgbot-120">
+                <h2 class="vetrino text-center">Наши работы</h2>
+                <div class="flex gap-30 mntop-80">
+                    <div class="card">
+                        <img src="./img/card1.png" alt="card1">
+                        <p class="text-center mntop-20">Букет” Флоренция”</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card2.png" alt="card2">
+                        <p class="text-center mntop-20">Букет” Флоренция”</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card3.png" alt="card3">
+                        <p class="text-center mntop-20">Букет” Флоренция”</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="foot container">
-            <div class="contacts">
-                <p>
-                    Контакты
-                </p>
-                <a href="tel:+380517328964">+380517328964</a>
-                <a href="tel:+380517328964">+380517328964</a>
-                <span>Харьков, ул Сумская 115</span>
+    <footer class="bg-green footer-padding">
+        <div class="container">
+            <div class="flex space-between">
+                <div>
+                    <p class="fs-24">Контакты</p>
+                    <a class="no-decoration black-text" href="tel:+380517328964">
+                        <p class="mntop-40">+380517328964</p>
+                    </a>
+                    <a class="no-decoration black-text" href="tel:+380517328964">
+                        <p class="mntop-20">+380517328964</p>
+                    </a>
+                    <p class="mntop-20">Харьков, ул Сумская 115</p>
+                </div>
+                <div>
+                    <h2 class="vetrino fs-36">Amelia F</h2>
+                </div>
+                <div>
+                    <p class="fs-24">Мы в соц. сетях</p>
+                    <div class="flex justify-center gap-20 mntop-40">
+                        <a href="https://www.instagram.com/"><img src="./img/instagram.svg" alt="instagram"></a>
+                        <a href="https://telegram.org/"><img src="./img/telegram.svg" alt="telegram"></a>
+                        <a href="https://www.viber.com/"><img src="./img/viber.svg" alt="viber"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p class="logo">Amelia F</p>
-            </div>
-            <div class="soc"><p>Мы в соц. сетях</p>
-               <div class="soc-list"><a href="https://www.instagram.com/"><img src="img/instagram.svg" alt="instagram"></a> 
-                <a href="https://www.telegram.org/"><img src="img/telegram.svg" alt="telegram"></a>
-                <a href="https://www.viber.com/"><img src="img/viber.svg" alt="viber"></a>
-            </div>
-            </div>
+            <p class="mntop-40 montserrat text-center">© 2023</p>
         </div>
-        <p class="copyright">© 2023</p>
+
     </footer>
 </body>
 
