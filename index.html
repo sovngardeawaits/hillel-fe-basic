@@ -5,13 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Menu</title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="listyle-none flex items-center gap-40">
+                    <li><a class="no-decoration text-grey" href="#">HOME</a></li>
+                    <li class="menu"><a class="no-decoration text-grey text-white" href="#">PRODUCTS +</a>
+                        <ul class="listyle-none menu-list pgtop-9">
+                            <li class="product"><a class="no-decoration text-white mnleft-20" href="#">Product 1</a>
+                                <span class="text-white mnright-20">+</span></li>
+                            <li class="product"><a class="no-decoration text-white mnleft-20" href="#">Product 2</a>
+                                <span class="text-white mnright-20">+</span>
+                                <ul class="listyle-none menu-list2">
+                                    <li class="product"><a class="no-decoration text-white mnleft-20" href="#">Sub
+                                            Item</a></li>
+                                    <li class="product"><a class="no-decoration text-white mnleft-20" href="#">Sub
+                                            Item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="no-decoration text-grey" href="#">ABOUT</a></li>
+                    <li><a class="no-decoration text-grey" href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>

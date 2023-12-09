@@ -1,18 +1,110 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: ;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  color: ;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
-body {
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
 
-  
+header {
+  background-color: #333333;
+  border-bottom: 10px solid #009eff;
+}
+
+.flex {
+  display: flex;
+}
+
+.listyle-none {
+  list-style: none;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.text-grey {
+  color: #cacaca;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  position: relative;
+  display: block;
+  line-height: 40px;
+  padding: 20px;
+}
+
+.menu:hover {
+  background-color: #009eff;
+}
+
+.menu-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+  width: 100%;
+  padding-top: 9px;
+}
+
+.menu:hover > .menu-list {
+  display: block;
+}
+
+.mnleft-20 {
+  margin: 20px;
+}
+
+.mnright-20 {
+  margin-right: 20px;
+}
+
+.product {
+  background-color: #009eff;
+  border: 2px solid #0084ef;
+  display: flex;
+  width: 250px; 
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product:hover {
+  background-color: #00a9ff;
+}
+
+.menu-list2 {
+  position: absolute;
+  left: 250px;
+  top: 50%;
+  display: none;
+  padding: 0;
+  width: 100%;
+}
+
+.product:hover > .menu-list2 {
+  display: block;
 }
