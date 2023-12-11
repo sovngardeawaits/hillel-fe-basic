@@ -5,14 +5,58 @@
 }
 
 html {
-  font-family: ;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  color: ;
+  font-family: "Graphik LCG", sans-serif;
+  font-size: 20px;
+  line-height: 0.6;
+  font-weight: 400;
+  color: #000;
 }
 
 body {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-  
+.container {
+  max-width: 1290px;
+  margin: auto;
+}
+
+header {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  border-bottom: solid 1px #CCCCCC;
+}
+header nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-57 {
+  gap: 57px;
+}
+
+.gap-45 {
+  gap: 45px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.fz-15 {
+  font-size: 15px;
+  line-height: 0.75;
+}
+
+.space-between {
+  justify-content: space-between;
 }
