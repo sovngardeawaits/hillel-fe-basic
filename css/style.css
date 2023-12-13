@@ -7,7 +7,7 @@
 html {
   font-family: "Graphik LCG", sans-serif;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 400;
   color: #000;
 }
@@ -74,6 +74,18 @@ header img {
   gap: 10px;
 }
 
+.gap-30 {
+  gap: 30px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
 .items-center {
   align-items: center;
 }
@@ -81,6 +93,16 @@ header img {
 .fz-15 {
   font-size: 15px;
   line-height: 1.66;
+}
+
+.fz-50 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 .space-between {
@@ -159,4 +181,72 @@ header img {
 .partners__icons img {
   max-width: 100%;
   height: auto;
+}
+
+.description {
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+.description .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.description .square {
+  width: 632px;
+  height: 577px;
+  background-color: #fff8e4;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.description .square p {
+  margin-left: 133px;
+  margin-top: 10px;
+}
+.description .square .white-bg {
+  width: 500px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 119px;
+  margin-left: 66px;
+  padding: 36px 63px 37px 37px;
+}
+.description h2 {
+  max-width: 493px;
+}
+.description img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-black {
+  color: #000;
+}
+
+.gap-165 {
+  gap: 165px;
+}
+
+.gap-250 {
+  gap: 250px;
+}
+
+.mr-138 {
+  margin-right: 138px;
+}
+
+.mw-490 {
+  max-width: 490px;
+}
+
+.mw-450 {
+  max-width: 450px;
+}
+
+.mw-520 {
+  max-width: 520px;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
