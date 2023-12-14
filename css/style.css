@@ -66,6 +66,10 @@ header img {
   gap: 57px;
 }
 
+.gap-85 {
+  gap: 85px;
+}
+
 .gap-45 {
   gap: 45px;
 }
@@ -95,6 +99,11 @@ header img {
   line-height: 1.66;
 }
 
+.fz-18 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
 .fz-50 {
   font-size: 50px;
   font-weight: 600;
@@ -117,6 +126,22 @@ header img {
   margin-top: 25px;
 }
 
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mt-7 {
+  margin-top: 7px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
 .fz-65 {
   font-size: 64px;
   font-weight: 600;
@@ -126,6 +151,10 @@ header img {
 .fz-25 {
   font-size: 25px;
   line-height: 1.4;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .offer {
@@ -247,6 +276,178 @@ header img {
   max-width: 520px;
 }
 
+.mw-330 {
+  max-width: 330px;
+}
+
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+.services {
+  background-color: #fff8e4;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+.services .cards {
+  gap: 130px;
+}
+.services .cards img {
+  max-width: 100%;
+  height: auto;
+}
+.services .cards .card {
+  max-width: 330px;
+}
+
+.about {
+  padding-top: 150px;
+  padding-bottom: 190px;
+}
+.about .cards .card {
+  max-width: 410px;
+  max-height: auto;
+}
+.about .cards img {
+  max-width: 179px;
+  height: 201px;
+}
+
+.fz-30 {
+  font-size: 30px;
+}
+
+.fz-35 {
+  font-size: 35px;
+}
+
+.reviews {
+  background-color: #c9e8f2;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.rating {
+  background-color: #dabc98;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.rating .border {
+  max-width: 810px;
+  border-right: 1px solid #000;
+}
+.rating .border .text {
+  margin-left: 67px;
+}
+.rating .cards {
+  padding: 30px 60px 20px 70px;
+  gap: 70px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.integrations {
+  padding-top: 170px;
+  padding-bottom: 160px;
+}
+.integrations .title {
+  max-width: 790px;
+  text-align: center;
+  margin: auto;
+}
+.integrations .text {
+  max-width: 540px;
+  text-align: center;
+  margin: auto;
+}
+.integrations .btn {
+  width: 193px;
+  height: 60px;
+  background-color: #ff6336;
+  border: 1px solid #ff6336;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 3.75;
+  font-weight: 600;
+}
+
+.try-it-free {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  background-color: #ff9c7d;
+  text-align: center;
+}
+.try-it-free .title {
+  max-width: 784px;
+  margin: auto;
+}
+.try-it-free .btn {
+  width: 160px;
+  height: 60px;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 3.52;
+  font-weight: 600;
+  margin-top: 55px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #EEEEEE;
+  padding-top: 92px;
+  padding-bottom: 50px;
+}
+footer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+footer .text {
+  max-width: 290px;
+  margin-top: 11px;
+}
+footer .list {
+  width: 187px;
+  height: auto;
+}
+footer .border {
+  height: 682px;
+  border-bottom: 1px solid #000;
+}
+footer .copyright {
+  padding-top: 50px;
+  font-size: 15px;
+  line-height: 1.25;
+}
+footer .copyright .text {
+  max-width: 350px;
+}
+
+.fz-40 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.ml-140 {
+  margin-left: 140px;
+}
+
+.gap-35 {
+  gap: 35px;
+}
+
+.gap-15 {
+  gap: 15px;
 }
