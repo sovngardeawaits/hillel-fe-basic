@@ -20,10 +20,14 @@ body {
 .container {
   max-width: 1600px;
   margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .container-less {
   max-width: 1360px;
   margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 header {
@@ -32,7 +36,6 @@ header {
 }
 header .grid-header {
   display: grid;
-  grid-template-columns: 1fr auto;
 }
 header .languages input[type=radio] {
   display: none;
@@ -173,7 +176,6 @@ footer {
 }
 footer .grid-footer {
   display: grid;
-  grid-template-columns: 1fr auto;
 }
 footer .text {
   color: #323264;
@@ -206,10 +208,50 @@ footer .tel {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
+  .grid-footer {
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .grid-header {
+    gap: 30px;
+    grid-template-areas: "a" "b" "c";
+  }
+  .grid-header .logo {
+    grid-area: b;
+    align-items: center;
+  }
+  .grid-header .languages {
+    grid-area: a;
+  }
+  .grid-header nav,
+  .grid-header ul {
+    grid-area: c;
+  }
 }
 @media (min-width: 900px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+  }
+  .grid-footer {
+    grid-template-columns: 1fr auto;
+  }
+  .grid-header {
+    gap: 16px;
+    grid-template-areas: "a b" "a c";
+  }
+  .grid-header .logo {
+    grid-area: a;
+    align-items: center;
+  }
+  .grid-header .languages {
+    grid-area: b;
+    justify-content: flex-end;
+  }
+  .grid-header nav,
+  .grid-header ul {
+    grid-area: c;
+    justify-content: flex-end;
   }
 }

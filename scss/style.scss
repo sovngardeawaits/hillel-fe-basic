@@ -20,9 +20,13 @@ body {
 .container {
   max-width: 1600px;
   margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   &-less {
     max-width: 1360px;
     margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -32,7 +36,6 @@ header {
 
   .grid-header {
     display: grid;
-    grid-template-columns: 1fr auto;
   }
 
   .languages {
@@ -150,8 +153,8 @@ header {
 
     img {
       border-radius: 12px;
-      max-width: 100%; 
-      min-height: 462px; 
+      max-width: 100%;
+      min-height: 462px;
       object-fit: cover;
     }
 
@@ -187,7 +190,6 @@ footer {
 
   .grid-footer {
     display: grid;
-    grid-template-columns: 1fr auto;
   }
 
   .text {
@@ -224,11 +226,71 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
+
+  .grid-footer {
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .grid-header {
+    gap: 30px;
+
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+
+    .logo {
+      grid-area: b;
+      align-items: center;
+    }
+
+    .languages {
+      grid-area: a;
+    }
+
+    nav,
+    ul {
+      grid-area: c;
+    }
+  }
 }
 
 @media (min-width: 900px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1fr auto;
+    
+  }
+  .grid-header {
+
+    gap: 16px;
+
+    grid-template-areas:
+      "a b"
+      "a c";
+
+    .logo {
+      grid-area: a;
+      align-items: center;
+    }
+
+    .languages {
+      grid-area: b;
+      justify-content: flex-end;
+    }
+
+    nav,
+    ul {
+      grid-area: c;
+      justify-content: flex-end;
+    }
+
+    
   }
 }
