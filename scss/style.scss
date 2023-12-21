@@ -41,6 +41,11 @@ header {
     border-radius: 3px;
   }
 
+  .facebook:hover path {
+    fill: #F0145A;
+    transition: 0.3s;
+  }
+
   .grid-header {
     display: grid;
   }
@@ -194,6 +199,16 @@ footer {
   background-color: #f5f5fa;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  .facebook:hover path {
+    fill: #F0145A;
+    transition: 0.3s;
+  }
+
+  .email:hover {
+    color: #F0145A;
+    transition: 0.3s;
+  }
 
   .dot {
     width: 6px;
