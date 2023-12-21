@@ -32,7 +32,12 @@ body {
 
 header {
   padding-top: 50px;
-  padding-bottom: 6px;
+}
+header .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 3px;
 }
 header .grid-header {
   display: grid;
@@ -113,10 +118,6 @@ header .nav-list {
   justify-content: flex-end;
 }
 
-.column {
-  flex-direction: column;
-}
-
 .gap-16 {
   gap: 16px;
 }
@@ -174,6 +175,12 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+footer .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 3px;
+}
 footer .grid-footer {
   display: grid;
 }
@@ -198,9 +205,55 @@ footer .tel {
   margin-top: 20px;
 }
 
-@media (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 550px) {
   .cards {
     gap: 30px;
+  }
+  .dot {
+    display: none;
+  }
+  .none {
+    display: none;
+  }
+  .title-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  header {
+    padding: 0;
+  }
+  header .nav-list {
+    display: none;
+  }
+  header .container {
+    padding: 0;
+  }
+  header .grid-header {
+    grid-template-areas: "a" "b";
+  }
+  header .grid-header .logo {
+    grid-area: b;
+    align-items: center;
+    max-width: 150px;
+    max-height: 32px;
+    margin: 15px;
+  }
+  header .grid-header .languages {
+    grid-area: a;
+    justify-content: space-between;
+    background-color: #F5F5FA;
+    padding: 15px;
+  }
+  header .logo svg {
+    max-width: 100%;
+  }
+  .grid-footer {
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .grid-footer .contact-info .column {
+    flex-direction: column;
   }
 }
 @media (min-width: 550px) {
@@ -216,6 +269,9 @@ footer .tel {
   .grid-header {
     gap: 30px;
     grid-template-areas: "a" "b" "c";
+  }
+  .grid-header .burger-menu {
+    display: none;
   }
   .grid-header .logo {
     grid-area: b;

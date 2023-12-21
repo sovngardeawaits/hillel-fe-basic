@@ -32,7 +32,14 @@ body {
 
 header {
   padding-top: 50px;
-  padding-bottom: 6px;
+
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #E6E6F0;
+    border-radius: 3px;
+  }
 
   .grid-header {
     display: grid;
@@ -118,10 +125,6 @@ header {
   justify-content: flex-end;
 }
 
-.column {
-  flex-direction: column;
-}
-
 .gap-16 {
   gap: 16px;
 }
@@ -188,6 +191,13 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 
+  .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #B3B3BA;
+    border-radius: 3px;
+  }
+
   .grid-footer {
     display: grid;
   }
@@ -215,10 +225,78 @@ footer {
   margin-top: 20px;
 }
 
-@media (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 550px) {
   .cards {
     gap: 30px;
   }
+
+  .dot {
+    display: none;
+  }
+  
+  .none {
+    display: none;
+  }
+
+  .title-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  header {
+    .nav-list {
+      display: none;
+    }
+
+    padding: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    .grid-header {
+      grid-template-areas:
+      "a"
+      "b";
+
+      .burger-menu {
+        
+      }
+
+      .logo {
+        grid-area: b;
+        align-items: center;
+        max-width: 150px;
+        max-height: 32px;
+        margin: 15px;
+      }
+  
+      .languages {
+        grid-area: a;
+        justify-content: space-between;
+        background-color: #F5F5FA;
+        padding: 15px;
+      }
+
+
+    }
+
+    .logo svg {
+      max-width: 100%;
+    }
+  }
+  .grid-footer {
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    
+    .contact-info {
+      .column {
+        flex-direction: column;
+      }
+    }
+  }
+
 }
 
 @media (min-width: 550px) {
@@ -240,6 +318,11 @@ footer {
       "a"
       "b"
       "c";
+
+
+      .burger-menu {
+        display: none;
+      }
 
     .logo {
       grid-area: b;
