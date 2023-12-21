@@ -61,6 +61,9 @@ header .nav-list {
   list-style: none;
   gap: 15px;
 }
+header .nav-list .blue-border-bottom:hover {
+  border-bottom: 2px solid #24A3FF;
+}
 
 .flex {
   display: flex;
