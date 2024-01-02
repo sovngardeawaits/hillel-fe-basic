@@ -33,16 +33,81 @@ body {
 header {
   padding-top: 50px;
 
+  .burger-nav {
+    display: none;
+    position: fixed;
+    inset: 0;
+    color: #24a3ff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    z-index: 2;
+    background-color: rgba(50, 50, 100, 0.7);
+    padding: 0 8px;
+
+    ul {
+      border-radius: 12px 12px 0px 0px;
+      background-color: #fff;
+      padding: 12px;
+      list-style: none;
+      width: 100%;
+      margin-top: 100%;
+      display: flex;
+      flex-direction: column;
+
+      svg {
+        float: right;
+        margin-bottom: 5px;
+      }
+
+      
+    }
+
+    .border {
+      background-color: #f5f5fa;
+      border-radius: 12px;
+      padding: 7px 0px;
+      text-align: center;
+    }
+
+    .border:hover {
+      background-color: #e6e6f0;
+    }
+  }
+
+  .burger-hidden {
+    display: none;
+  }
+
+  .burger-nav.active {
+    display: flex;
+  }
+
+  .burger {
+    margin-top: 15px;
+    margin-right: 12px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 5;
+
+    svg rect {
+      fill: transparent;
+    }
+  }
+
+  .burger.active svg rect {
+    fill: #e6e6f0;
+  }
 
   .dot {
     width: 6px;
     height: 6px;
-    background-color: #E6E6F0;
+    background-color: #e6e6f0;
     border-radius: 3px;
   }
 
   .facebook:hover path {
-    fill: #F0145A;
+    fill: #f0145a;
     transition: 0.3s;
   }
 
@@ -65,15 +130,24 @@ header {
       margin-right: 6px;
       background-color: #f0145a;
       color: white;
+      transition: 0.1s;
+    }
+
+    label:hover {
+      border: 1px solid #f5f5fa;
+      border-radius: 8px;
+      padding: 5px 7px;
+      background-color: #f5f5fa;
+      transition: 0.1s;
     }
   }
 
   .nav-list {
     list-style: none;
     gap: 15px;
-    
+
     .blue-border-bottom:hover {
-      border-bottom: 2px solid #24A3FF;
+      border-bottom: 2px solid #24a3ff;
     }
   }
 }
@@ -201,19 +275,19 @@ footer {
   padding-bottom: 30px;
 
   .facebook:hover path {
-    fill: #F0145A;
+    fill: #f0145a;
     transition: 0.3s;
   }
 
   .email:hover {
-    color: #F0145A;
+    color: #f0145a;
     transition: 0.3s;
   }
 
   .dot {
     width: 6px;
     height: 6px;
-    background-color: #B3B3BA;
+    background-color: #b3b3ba;
     border-radius: 3px;
   }
 
@@ -252,7 +326,7 @@ footer {
   .dot {
     display: none;
   }
-  
+
   .none {
     display: none;
   }
@@ -275,12 +349,8 @@ footer {
 
     .grid-header {
       grid-template-areas:
-      "a"
-      "b";
-
-      .burger-menu {
-        
-      }
+        "a"
+        "b";
 
       .logo {
         grid-area: b;
@@ -289,15 +359,13 @@ footer {
         max-height: 32px;
         margin: 15px;
       }
-  
+
       .languages {
         grid-area: a;
         justify-content: space-between;
-        background-color: #F5F5FA;
+        background-color: #f5f5fa;
         padding: 15px;
       }
-
-
     }
 
     .logo svg {
@@ -308,14 +376,13 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 30px;
-    
+
     .contact-info {
       .column {
         flex-direction: column;
       }
     }
   }
-
 }
 
 @media (min-width: 550px) {
@@ -338,10 +405,9 @@ footer {
       "b"
       "c";
 
-
-      .burger-menu {
-        display: none;
-      }
+    .burger {
+      display: none;
+    }
 
     .logo {
       grid-area: b;
@@ -359,6 +425,10 @@ footer {
   }
 }
 
+.gap-15 {
+  gap: 15px;
+}
+
 @media (min-width: 900px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
@@ -367,10 +437,8 @@ footer {
 
   .grid-footer {
     grid-template-columns: 1fr auto;
-    
   }
   .grid-header {
-
     gap: 16px;
 
     grid-template-areas:
@@ -392,7 +460,5 @@ footer {
       grid-area: c;
       justify-content: flex-end;
     }
-
-    
   }
 }
