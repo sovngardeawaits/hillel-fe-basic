@@ -20,13 +20,13 @@ body {
 .container {
   max-width: 1600px;
   margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   &-less {
     max-width: 1360px;
     margin: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -334,6 +334,9 @@ footer {
   .title-section {
     padding-top: 30px;
     padding-bottom: 30px;
+     .title {
+      font-size: 30px;
+     }
   }
 
   header {

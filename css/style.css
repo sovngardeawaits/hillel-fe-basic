@@ -20,14 +20,14 @@ body {
 .container {
   max-width: 1600px;
   margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .container-less {
   max-width: 1360px;
   margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 header {
@@ -295,6 +295,9 @@ footer .tel {
   .title-section {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .title-section .title {
+    font-size: 30px;
   }
   header {
     padding: 0;
