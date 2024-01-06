@@ -109,3 +109,94 @@ header ul .nav-item {
   border: 1px solid #dacec6;
   background-color: #f1ebe7;
 }
+
+.relative {
+  position: relative;
+}
+
+.offer {
+  text-align: center;
+  padding-bottom: 950px;
+}
+.offer img {
+  position: absolute;
+}
+.offer .offer1 {
+  right: 210px;
+  top: 10px;
+}
+.offer .offer2 {
+  left: 36px;
+  top: 120px;
+}
+.offer .offer3 {
+  right: 65px;
+  top: 266px;
+}
+.offer .offer4 {
+  left: 94px;
+  top: 490px;
+}
+.offer .offer5 {
+  right: 150px;
+  top: 569px;
+}
+.offer span {
+  font-family: "STSong";
+  font-size: 65px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.offer .title {
+  font-family: "STSong";
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.offer h2 {
+  color: #68513f;
+  font-family: "Style Script";
+  font-size: 137px;
+  font-weight: 400;
+  line-height: 0.8;
+  transform: rotate(-5.079deg);
+}
+.offer .description {
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+.offer .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+.offer .btn {
+  color: #68513f;
+  background-color: #f1ebe7;
+  border: 1px solid #dacec6;
+  border-radius: 73px;
+  width: 95px;
+  height: 45px;
+  margin-top: 60px;
+}
+
+.products h2 {
+  color: #68513f;
+  text-align: center;
+  font-family: "Style Script";
+  font-size: 137px;
+  font-weight: 400;
+  line-height: 0.81;
+  margin-top: 90px;
+}
+.products p {
+  text-align: center;
+  font-family: "STSong";
+  font-size: 65px;
+  font-weight: 300;
+  line-height: 1.5;
+}
