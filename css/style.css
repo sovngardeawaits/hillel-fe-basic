@@ -26,8 +26,8 @@ body {
 .container-less {
   max-width: 1360px;
   margin: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 header {
@@ -394,4 +394,148 @@ footer .tel {
     grid-area: c;
     justify-content: flex-end;
   }
+}
+.contact-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.contact-section .grid {
+  grid-template-areas: "a b";
+  gap: 60px;
+}
+.contact-section .form {
+  background-color: #f5f5fa;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 12px;
+}
+.contact-section .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-section .form form .btn {
+  padding: 18px 30px;
+  border-radius: 12px;
+  background: var(--Active-Regular, #24a3ff);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  border-style: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.22;
+  margin-top: 15px;
+}
+.contact-section .form form .btn:hover {
+  background-color: #0085ff;
+  transition: background-color 0.3s ease;
+}
+.contact-section .form form .btn:active {
+  background-color: #006ccf;
+  transition: background-color 0.3s ease;
+}
+.contact-section .form form input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Basic-White, #fff);
+  background: var(--Basic-White, #fff);
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+}
+.contact-section .form form textarea {
+  resize: none;
+  width: 100%;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Basic-White, #fff);
+  background: var(--Basic-White, #fff);
+  height: 130px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+}
+.contact-section .form form input::placeholder,
+.contact-section .form form textarea::placeholder {
+  color: #b3b3ba;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-section .form form input:focus,
+.contact-section .form form textarea:focus {
+  border-color: #24a3ff;
+  outline: none;
+}
+.contact-section .form form p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.contact-section .form h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-section .contact-info {
+  color: #323264;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+.contact-section .contact-info .border {
+  border-bottom: 4px solid #e6e6f0;
+  margin: 30px 0;
+  max-width: 100%;
+}
+.contact-section .contact-info .tel {
+  color: #46466e;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.42;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.contact-section .contact-info .mail {
+  color: #24a3fe;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.42;
+  text-decoration: none;
+}
+.contact-section .contact-info .facebook:hover path {
+  fill: #f0145a;
+  transition: 0.3s;
+}
+.contact-section .contact-info .facebook:hover .title {
+  color: #f0145a;
+}
+.contact-section .contact-info .facebook {
+  text-decoration: none;
+}
+.contact-section .contact-info .facebook .title {
+  color: #24a3ff;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 700;
+  max-width: 105px;
+  letter-spacing: 1px;
+}
+
+.stretch {
+  align-self: stretch;
 }
