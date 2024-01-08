@@ -165,8 +165,7 @@
 
     </header>
     <main>
-        <section class="contact-section">
-            <div class="container-less grid">
+        <section class="contact-section container-less">
                 <div class="contact-info">
                     <p>Kyiv,</p>
                     <p>Mechnikova str, 14</p>
@@ -180,7 +179,7 @@
                         <a class="mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
                     </p>
                     <div class="border"></div>
-                    <a class="flex facebook items-center gap-10" href="https://facebook.com/">
+                    <a class="flex facebook items-center gap-10" href="https://facebook.com/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                             <g clip-path="url(#clip0_22724_6547)">
                                 <path
@@ -198,7 +197,7 @@
                 </div>
                 <div class="form">
                     <h1>We would like to help you</h1>
-                    <form action="https://fom.in.ua/echo" method="post">
+                    <form>
                         <label for="name"><input type="text" id="name" name="name" placeholder="Name" required></label>
 
 
@@ -207,17 +206,16 @@
                         <p>How to answer you?</p>
 
 
-                        <label for="phone"><input type="tel" id="phone" name="phone" placeholder="Phone number" required></label>
+                        <label for="phone"><input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="[0-9\+\(\)]+" required></label>
 
 
                         <label for="email"><input type="email" id="email" name="email" placeholder="Email" required></label>
 
 
-                        <button class="btn" onclick="this.classList.add('success')" type="submit">Send message</button>
+                        <button class="btn" type="submit" data-status="progress">Send message</button>
                     </form>
 
                 </div>
-            </div>
         </section>
     </main>
     <footer>
@@ -229,7 +227,7 @@
                     <a class="fz-12 no-decoration text-blue" href="#">ON MAP</a>
                 </div>
                 <div class="flex items-center column gap-10 mt-20">
-                    <a href="https://facebook.com/">
+                    <a href="https://facebook.com/" target="_blank">
                         <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="38" height="38"
                             viewBox="0 0 38 38" fill="none">
                             <g clip-path="url(#clip0_126421_2616)">

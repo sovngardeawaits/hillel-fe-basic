@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -335,6 +336,9 @@ footer .tel {
   .grid-footer .contact-info .column {
     flex-direction: column;
   }
+  .contact-section {
+    gap: 30px;
+  }
 }
 @media (min-width: 550px) {
   .cards {
@@ -363,6 +367,9 @@ footer .tel {
   .grid-header nav,
   .grid-header ul {
     grid-area: c;
+  }
+  .contact-section {
+    gap: 60px;
   }
 }
 .gap-15 {
@@ -394,14 +401,14 @@ footer .tel {
     grid-area: c;
     justify-content: flex-end;
   }
+  .contact-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .contact-section {
   padding-bottom: 60px;
   padding-top: 60px;
-}
-.contact-section .grid {
-  grid-template-areas: "a b";
-  gap: 60px;
+  display: grid;
 }
 .contact-section .form {
   background-color: #f5f5fa;
@@ -428,6 +435,14 @@ footer .tel {
   line-height: 1.22;
   margin-top: 15px;
 }
+.contact-section .form form .btn[data-status=progress]::after {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .contact-section .form form .btn:hover {
   background-color: #0085ff;
   transition: background-color 0.3s ease;
@@ -446,6 +461,9 @@ footer .tel {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
+}
+.contact-section .form form input:invalid:not(:placeholder-shown) {
+  border: 2px solid red; /* Установка красной рамки при неверных данных */
 }
 .contact-section .form form textarea {
   resize: none;

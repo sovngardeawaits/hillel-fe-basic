@@ -384,6 +384,10 @@ footer {
       }
     }
   }
+
+  .contact-section {
+    gap: 30px;
+  }
 }
 
 @media (min-width: 550px) {
@@ -424,7 +428,12 @@ footer {
       grid-area: c;
     }
   }
+
+  .contact-section {
+    gap: 60px;
+  }
 }
+
 
 .gap-15 {
   gap: 15px;
@@ -462,16 +471,18 @@ footer {
       justify-content: flex-end;
     }
   }
+
+  .contact-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contact-section {
   padding-bottom: 60px;
   padding-top: 60px;
 
-  .grid {
-    grid-template-areas: "a b";
-    gap: 60px;
-  }
+  display: grid;
+  
 
   .form {
     background-color: #f5f5fa;
@@ -497,7 +508,16 @@ footer {
         font-weight: 700;
         line-height: 1.22;
         margin-top: 15px;
-      
+      }
+
+      .btn[data-status="progress"]::after {
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
       }
 
       .btn:hover {
@@ -520,6 +540,10 @@ footer {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.62;
+      }
+
+      input:invalid:not(:placeholder-shown) {
+        border: 2px solid red; /* Установка красной рамки при неверных данных */
       }
 
       textarea {
