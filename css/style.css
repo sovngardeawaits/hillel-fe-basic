@@ -147,7 +147,7 @@ header .burger {
   z-index: 5;
   position: absolute;
   right: 0;
-  margin-top: 10%;
+  top: 70px;
 }
 header .burger svg rect {
   fill: transparent;
