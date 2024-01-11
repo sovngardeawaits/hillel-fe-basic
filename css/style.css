@@ -588,6 +588,9 @@ footer .tel {
   .bg-gradient .top h1 {
     max-width: 315px;
   }
+  .bg-gradient .tab-menu {
+    padding: 30px 0;
+  }
 }
 @media (min-width: 551px) {
   .cards {
@@ -629,6 +632,9 @@ footer .tel {
   .bg-gradient .top {
     background: url(../img/symbol.png) no-repeat top/cover;
     min-height: 1024px;
+  }
+  .bg-gradient .tab-menu {
+    padding: 60px 0;
   }
 }
 .gap-15 {
