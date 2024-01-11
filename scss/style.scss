@@ -50,12 +50,15 @@ body {
     transform: translateX(-50%);
     justify-content: center;
     align-items: center;
-    color: #fff;
+    min-height: 100vh;
+
+    h1 {
+      color: #fff;
     font-size: 38px;
     font-weight: 700;
     line-height: 1.21;
     text-align: center;
-    min-height: 100vh;
+    }
     .btn-scroll {
       position: absolute;
       bottom: 30px;
@@ -613,7 +616,7 @@ footer {
 
 
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 0px) and (max-width: 551px) {
   .cards {
     gap: 30px;
   }
@@ -701,12 +704,16 @@ footer {
     .top {
       background: url(../img/symbol.png) no-repeat top/cover;
       min-height: 600px;
+
+      h1 {
+        max-width: 315px;
+      }
     }
   }
 
 }
 
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
@@ -767,7 +774,7 @@ footer {
   gap: 15px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
@@ -803,6 +810,17 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  .bg-gradient {
+    padding-top: 652px;
+    .top {
+      min-height: 768px;
+      background: url(../img/symbol.png) no-repeat top/contain;
+    }
+  }
+}
+
+
+@media (min-width: 1441px) {
   .bg-gradient {
     padding-top: 884px;
     .top {

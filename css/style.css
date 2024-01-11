@@ -45,12 +45,14 @@ body {
   transform: translateX(-50%);
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+}
+.bg-gradient .top h1 {
   color: #fff;
   font-size: 38px;
   font-weight: 700;
   line-height: 1.21;
   text-align: center;
-  min-height: 100vh;
 }
 .bg-gradient .top .btn-scroll {
   position: absolute;
@@ -514,7 +516,7 @@ footer .tel {
   align-self: stretch;
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-width: 0px) and (max-width: 551px) {
   .cards {
     gap: 30px;
   }
@@ -583,8 +585,11 @@ footer .tel {
     background: url(../img/symbol.png) no-repeat top/cover;
     min-height: 600px;
   }
+  .bg-gradient .top h1 {
+    max-width: 315px;
+  }
 }
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
@@ -630,7 +635,7 @@ footer .tel {
   gap: 15px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
@@ -658,6 +663,15 @@ footer .tel {
   .contact-section {
     grid-template-columns: 1fr 1fr;
   }
+  .bg-gradient {
+    padding-top: 652px;
+  }
+  .bg-gradient .top {
+    min-height: 768px;
+    background: url(../img/symbol.png) no-repeat top/contain;
+  }
+}
+@media (min-width: 1441px) {
   .bg-gradient {
     padding-top: 884px;
   }
