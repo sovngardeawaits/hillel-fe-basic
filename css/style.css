@@ -697,6 +697,9 @@ label {
   .my-bg-gradient .tab-menu .tab-title {
     font-size: 20px;
   }
+  .my-bg-gradient .tab-menu .nav-link {
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 900px) {
   .tab-menu .d-flex {
