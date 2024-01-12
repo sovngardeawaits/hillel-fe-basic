@@ -6,11 +6,8 @@
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 1.22;
-  font-weight: 700;
-  color: #b3b3ba;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -19,25 +16,26 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.22;
+  font-weight: 700;
+  color: #b3b3ba;
 }
 
 .container {
   max-width: 1600px;
   margin: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .container-less {
   max-width: 1360px;
   margin: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
-.bg-gradient {
+.my-bg-gradient {
   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
 }
-.bg-gradient .top {
+.my-bg-gradient .top {
   position: absolute;
   width: 100%;
   top: 0;
@@ -47,22 +45,23 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-.bg-gradient .top h1 {
+.my-bg-gradient .top h1 {
   color: #fff;
   font-size: 38px;
   font-weight: 700;
   line-height: 1.21;
   text-align: center;
 }
-.bg-gradient .top .btn-scroll {
+.my-bg-gradient .top .btn-scroll {
   position: absolute;
   bottom: 30px;
 }
-.bg-gradient .top .btn-scroll:hover svg circle,
-.bg-gradient .top .btn-scroll:hover svg path {
-  stroke: #F0145A;
+.my-bg-gradient .top .btn-scroll:hover svg circle,
+.my-bg-gradient .top .btn-scroll:hover svg path {
+  stroke: #f0145a;
   transition: 0.3s;
 }
+
 header.dark-header {
   background-color: #323264;
 }
@@ -130,6 +129,7 @@ header .burger-nav .border {
   border-radius: 12px;
   padding: 7px 0px;
   text-align: center;
+  border-style: none !important;
 }
 header .burger-nav .border:hover {
   background-color: #e6e6f0;
@@ -512,11 +512,110 @@ footer .tel {
   letter-spacing: 1px;
 }
 
+img,
+svg {
+  vertical-align: baseline;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: initial;
+  margin-bottom: initial;
+}
+
+p {
+  margin-bottom: initial;
+  margin-top: initial;
+}
+
+dl,
+ol,
+ul {
+  margin: initial;
+  padding: initial;
+}
+
+label {
+  display: inline;
+}
+
 .stretch {
   align-self: stretch;
 }
 
+.tab-menu .border-line {
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  align-self: stretch;
+  margin: 0 60px;
+  height: 303px;
+}
+.tab-menu .d-flex {
+  align-items: center;
+}
+.tab-menu .nav-link {
+  display: block;
+  font-size: 38px;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+  color: #b3b3ba;
+  text-align: right;
+}
+.tab-menu .nav-link:hover {
+  color: #f0145a;
+}
+.tab-menu .nav-link.active {
+  color: inherit;
+}
+.tab-menu .nav-pills .nav-link.active,
+.tab-menu .nav-pills .show > .nav-link {
+  background: var(--Gradient-Text-Red-Reversed, linear-gradient(90deg, #ef8080 0.84%, #f0145a 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tab-menu .tab-content .tab-description {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.58;
+  margin-top: 30px;
+}
+.tab-menu .tab-content .tab-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.tab-menu .nav-pills {
+  width: 100%;
+  gap: 30px;
+  max-width: 375px;
+  justify-content: flex-end;
+}
+
+.w-375 {
+  width: 375px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 551px) {
+  .container {
+    padding: 0 30px;
+  }
+  .container-less {
+    padding: 0 30px;
+  }
   .cards {
     gap: 30px;
   }
@@ -578,18 +677,56 @@ footer .tel {
   .contact-section {
     gap: 30px;
   }
-  .bg-gradient {
+  .my-bg-gradient {
     padding-top: 460px;
   }
-  .bg-gradient .top {
+  .my-bg-gradient .top {
     background: url(../img/symbol.png) no-repeat top/cover;
     min-height: 600px;
   }
-  .bg-gradient .top h1 {
+  .my-bg-gradient .top h1 {
     max-width: 315px;
   }
-  .bg-gradient .tab-menu {
+  .my-bg-gradient .tab-menu {
     padding: 30px 0;
+  }
+  .my-bg-gradient .tab-menu .border-line {
+    margin: 30px 0;
+  }
+  .my-bg-gradient .tab-menu .tab-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .tab-menu .d-flex {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .tab-menu .border-line {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-self: stretch;
+    margin: 60px 0;
+    height: 4px;
+  }
+  .tab-menu .nav-link {
+    text-align: start;
+  }
+  .tab-menu .nav-pills {
+    max-width: 100%;
+    justify-content: flex-start;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    max-width: calc(100vw - 3rem);
+    overflow-x: auto;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 1440px) {
+  .container {
+    padding: 0 60px;
+  }
+  .container-less {
+    padding: 0 60px;
   }
 }
 @media (min-width: 551px) {
@@ -626,14 +763,14 @@ footer .tel {
   .contact-section {
     gap: 60px;
   }
-  .bg-gradient {
+  .my-bg-gradient {
     padding-top: 804px;
   }
-  .bg-gradient .top {
+  .my-bg-gradient .top {
     background: url(../img/symbol.png) no-repeat top/cover;
     min-height: 1024px;
   }
-  .bg-gradient .tab-menu {
+  .my-bg-gradient .tab-menu {
     padding: 60px 0;
   }
 }
@@ -669,19 +806,19 @@ footer .tel {
   .contact-section {
     grid-template-columns: 1fr 1fr;
   }
-  .bg-gradient {
+  .my-bg-gradient {
     padding-top: 652px;
   }
-  .bg-gradient .top {
+  .my-bg-gradient .top {
     min-height: 768px;
     background: url(../img/symbol.png) no-repeat top/contain;
   }
 }
 @media (min-width: 1441px) {
-  .bg-gradient {
+  .my-bg-gradient {
     padding-top: 884px;
   }
-  .bg-gradient .top {
+  .my-bg-gradient .top {
     min-height: 1000px;
     background: url(../img/symbol.png) no-repeat top/contain;
   }

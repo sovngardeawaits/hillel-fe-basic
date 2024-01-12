@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./fonts/montserrat.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Homepage</title>
 </head>
 
-<body>
+<body class="main-page">
     <header class="dark-header">
         <div class="container items-center grid-header">
             <div class="logo">
@@ -209,30 +210,82 @@
 
     </header>
     <main>
-      <section class="bg-gradient">
-        <section class="top flex">
-            <h1>you legal solutions provider</h1>
-            <a class="btn-scroll" href="#services">
-                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-                    <g clip-path="url(#clip0_22728_11353)">
-                      <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
-                      <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_22728_11353">
-                        <rect width="42" height="42" fill="white"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-            </a>
+        <section class="my-bg-gradient">
+            <section class="top flex">
+                <h1>you legal solutions provider</h1>
+                <a class="btn-scroll" href="#services">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                        <g clip-path="url(#clip0_22728_11353)">
+                            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22728_11353">
+                                <rect width="42" height="42" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </section>
+            <section class="tab-menu">
+                <div class="container-less">
+                    <div class="d-flex">
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Consistent</button>
+                            <button class="nav-link w-375" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">Customer oriented</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Innovative</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Business oriented</button>
+                        </div>
+                        <span class="border-line"></span>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <h3 class="tab-title">We turn the idea of legal services</h3>
+                                <p class="tab-description">Consolidating many years of experience and practice, the
+                                    company's lawyers accompany
+                                    complex projects and achieve a number of important decisions for the industry. Many
+                                    of them form the practice of applying the law of the sea in Ukraine.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <h3 class="tab-title">We turn the idea of legal services</h3>
+                                <p class="tab-description">Consolidating many years of experience and practice, the
+                                    company's lawyers accompany
+                                    complex projects and achieve a number of important decisions for the industry. Many
+                                    of them form the practice of applying the law of the sea in Ukraine.</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                <h3 class="tab-title">We turn the idea of legal services</h3>
+                                <p class="tab-description">Consolidating many years of experience and practice, the
+                                    company's lawyers accompany
+                                    complex projects and achieve a number of important decisions for the industry. Many
+                                    of them form the practice of applying the law of the sea in Ukraine.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                <h3 class="tab-title">We turn the idea of legal services</h3>
+                                <p class="tab-description">Consolidating many years of experience and practice, the
+                                    company's lawyers accompany
+                                    complex projects and achieve a number of important decisions for the industry. Many
+                                    of them form the practice of applying the law of the sea in Ukraine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-        <section class="tab-menu">
-            <div class="container">
-                
-            </div>
-        </section>
-      </section>
- 
+
     </main>
     <footer>
         <div class="container grid-footer">
@@ -270,8 +323,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./assets/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
