@@ -34,6 +34,7 @@ body {
 
 .my-bg-gradient {
   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  border-radius: 0px 0px 12px 12px;
 }
 .my-bg-gradient .top {
   position: absolute;
@@ -609,6 +610,64 @@ label {
   width: 375px;
 }
 
+.services {
+  padding-bottom: 60px;
+}
+.services-link {
+  color: #24a3ff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.22;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  max-width: 90px;
+}
+.services-link:hover {
+  color: #f0145a;
+}
+.services-link:hover path {
+  stroke: #f0145a;
+}
+.services-title {
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.22;
+  margin-top: 10px;
+}
+.services-item__list {
+  margin-top: 60px;
+  display: grid;
+}
+.services-item__list .services-item__card {
+  width: 100%;
+}
+.services-item__list .services-item__card .services-icon {
+  padding: 14px;
+  border-radius: 24px;
+  background: #fff;
+}
+.services-item__list .services-item__card .services-item__title {
+  color: #24a3ff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.22;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.services-item__list .services-item__card .services-item__description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+}
+
 @media screen and (min-width: 0px) and (max-width: 551px) {
   .container {
     padding: 0 30px;
@@ -697,8 +756,8 @@ label {
   .my-bg-gradient .tab-menu .tab-title {
     font-size: 20px;
   }
-  .my-bg-gradient .tab-menu .nav-link {
-    font-size: 30px;
+  .services-item__list {
+    gap: 30px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 900px) {
@@ -717,7 +776,6 @@ label {
     text-align: start;
   }
   .tab-menu .nav-pills {
-    max-width: 100%;
     justify-content: flex-start;
     white-space: nowrap;
     flex-wrap: nowrap;
@@ -780,6 +838,13 @@ label {
   .my-bg-gradient .tab-menu {
     padding: 60px 0;
   }
+  .services-item__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  .services-item__list .services-item__card {
+    max-width: 293px;
+  }
 }
 .gap-15 {
   gap: 15px;
@@ -819,6 +884,13 @@ label {
   .my-bg-gradient .top {
     min-height: 768px;
     background: url(../img/symbol.png) no-repeat top/contain;
+  }
+  .services-item__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  .services-item__list .services-item__card {
+    max-width: 493px;
   }
 }
 @media (min-width: 1441px) {
