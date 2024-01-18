@@ -15,3 +15,9 @@ $('.close-menu').click(function() {
     $('.burger').removeClass('active');
   });
 
+  $(document).ready(function(){
+    $("#team-slider").owlCarousel({
+      items: 1
+    });
+    
+  });
