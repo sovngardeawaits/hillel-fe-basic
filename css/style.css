@@ -32,11 +32,11 @@ body {
   margin: auto;
 }
 
-.my-bg-gradient {
+.my-bg-gradient__main {
   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   border-radius: 0px 0px 12px 12px;
 }
-.my-bg-gradient .top {
+.my-bg-gradient__main .top {
   position: absolute;
   width: 100%;
   top: 0;
@@ -46,19 +46,19 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-.my-bg-gradient .top h1 {
+.my-bg-gradient__main .top h1 {
   color: #fff;
   font-size: 38px;
   font-weight: 700;
   line-height: 1.21;
   text-align: center;
 }
-.my-bg-gradient .top .btn-scroll {
+.my-bg-gradient__main .top .btn-scroll {
   position: absolute;
   bottom: 30px;
 }
-.my-bg-gradient .top .btn-scroll:hover svg circle,
-.my-bg-gradient .top .btn-scroll:hover svg path {
+.my-bg-gradient__main .top .btn-scroll:hover svg circle,
+.my-bg-gradient__main .top .btn-scroll:hover svg path {
   stroke: #f0145a;
   transition: 0.3s;
 }
@@ -680,6 +680,7 @@ label {
   padding: 14px;
   border-radius: 24px;
   background: #fff;
+  display: block;
 }
 .services-item__list .services-item__card .services-item__title {
   color: #24a3ff;
@@ -688,6 +689,12 @@ label {
   line-height: 1.22;
   margin-top: 30px;
   margin-bottom: 15px;
+}
+.services-item__list .services-item__card .services-item__title:hover {
+  color: #F0145A;
+}
+.services-item__list .services-item__card .no-decoration {
+  display: inline-block;
 }
 .services-item__list .services-item__card .services-item__description {
   color: #fff;
@@ -847,7 +854,7 @@ label {
 }
 .publications-list {
   padding-bottom: 30px;
-  border-bottom: 2px solid #E6E6F0;
+  border-bottom: 2px solid #e6e6f0;
   display: grid;
   gap: 30px;
 }
@@ -925,6 +932,17 @@ label {
   line-height: 1.57;
 }
 
+.my-bg-gradient {
+  background: var(--Gradient-Supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%));
+}
+.my-bg-gradient .services {
+  padding-top: 60px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 551px) {
   .container {
     padding: 0 30px;
@@ -994,27 +1012,34 @@ label {
     gap: 30px;
     padding: 30px;
   }
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 460px;
   }
-  .my-bg-gradient .top {
+  .my-bg-gradient__main .top {
     background: url(../img/symbol.png) no-repeat top/cover;
     min-height: 600px;
   }
-  .my-bg-gradient .top h1 {
+  .my-bg-gradient__main .top h1 {
     max-width: 315px;
   }
-  .my-bg-gradient .tab-menu {
+  .my-bg-gradient__main .tab-menu {
     padding: 30px 0;
   }
-  .my-bg-gradient .tab-menu .border-line {
+  .my-bg-gradient__main .tab-menu .border-line {
     margin: 30px 0;
   }
-  .my-bg-gradient .tab-menu .tab-title {
+  .my-bg-gradient__main .tab-menu .tab-title {
     font-size: 20px;
   }
   .services-item__list {
     gap: 30px;
+    margin-top: 30px;
+  }
+  .services-title {
+    font-size: 30px;
+  }
+  .my-bg-gradient .services {
+    padding-top: 0;
   }
   .services::before {
     content: "";
@@ -1138,14 +1163,14 @@ label {
   .contact-section {
     gap: 60px;
   }
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 804px;
   }
-  .my-bg-gradient .top {
+  .my-bg-gradient__main .top {
     background: url(../img/symbol.png) no-repeat top/cover;
     min-height: 1024px;
   }
-  .my-bg-gradient .tab-menu {
+  .my-bg-gradient__main .tab-menu {
     padding: 60px 0;
   }
   .services-item__list {
@@ -1210,10 +1235,10 @@ label {
   .contact-section {
     grid-template-columns: 1fr 1fr;
   }
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 652px;
   }
-  .my-bg-gradient .top {
+  .my-bg-gradient__main .top {
     min-height: 768px;
     background: url(../img/symbol.png) no-repeat top/contain;
   }
@@ -1258,10 +1283,10 @@ label {
   }
 }
 @media (min-width: 1441px) {
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 884px;
   }
-  .my-bg-gradient .top {
+  .my-bg-gradient__main .top {
     min-height: 1000px;
     background: url(../img/symbol.png) no-repeat top/contain;
   }
@@ -1292,5 +1317,8 @@ label {
   }
   .partners-item {
     max-width: 430px;
+  }
+  .my-bg-gradient {
+    background: var(--Gradient-Supersoft, linear-gradient(207deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%));
   }
 }

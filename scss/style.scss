@@ -31,7 +31,7 @@ body {
   }
 }
 
-.my-bg-gradient {
+.my-bg-gradient__main {
   background: linear-gradient(
     229deg,
     #323264 11.93%,
@@ -774,6 +774,7 @@ label {
         padding: 14px;
         border-radius: 24px;
         background: #fff;
+        display: block;
       }
 
       .services-item__title {
@@ -783,6 +784,14 @@ label {
         line-height: 1.22;
         margin-top: 30px;
         margin-bottom: 15px;
+      }
+
+      .services-item__title:hover {
+        color: #F0145A;
+      }
+
+      .no-decoration {
+        display: inline-block;
       }
 
       .services-item__description {
@@ -963,11 +972,10 @@ label {
 
   &-list {
     padding-bottom: 30px;
-    border-bottom: 2px solid #E6E6F0;
+    border-bottom: 2px solid #e6e6f0;
     display: grid;
     gap: 30px;
   }
-
 
   &-link {
     color: #24a3ff;
@@ -1051,11 +1059,27 @@ label {
       color: #000;
       font-size: 14px;
       font-weight: 400;
-      line-height: 1.57; 
+      line-height: 1.57;
     }
   }
 }
 
+.my-bg-gradient {
+  background: var(
+    --Gradient-Supersoft,
+    linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%)
+  );
+
+  .services {
+    padding-top: 60px;
+  }
+}
+
+
+
+.pt-60 {
+  padding-top: 60px;
+}
 
 
 
@@ -1159,7 +1183,7 @@ label {
     padding: 30px;
   }
 
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 460px;
     .top {
       background: url(../img/symbol.png) no-repeat top/cover;
@@ -1185,7 +1209,16 @@ label {
 
   .services-item__list {
     gap: 30px;
+    margin-top: 30px;
   }
+
+  .services-title {
+    font-size: 30px;
+  }
+
+  .my-bg-gradient .services {
+    padding-top: 0;
+}
 
   .services::before {
     content: "";
@@ -1345,7 +1378,7 @@ label {
     gap: 60px;
   }
 
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 804px;
     .top {
       background: url(../img/symbol.png) no-repeat top/cover;
@@ -1381,7 +1414,6 @@ label {
   }
 
   .publications {
-
     &-list {
       grid-template-columns: repeat(2, 1fr);
 
@@ -1438,7 +1470,7 @@ label {
     grid-template-columns: 1fr 1fr;
   }
 
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 652px;
     .top {
       min-height: 768px;
@@ -1476,7 +1508,6 @@ label {
   }
 
   .publications {
-
     &-list {
       grid-template-columns: repeat(3, 1fr);
 
@@ -1504,7 +1535,7 @@ label {
 }
 
 @media (min-width: 1441px) {
-  .my-bg-gradient {
+  .my-bg-gradient__main {
     padding-top: 884px;
     .top {
       min-height: 1000px;
@@ -1549,4 +1580,8 @@ label {
       max-width: 430px;
     }
   }
+
+  .my-bg-gradient {
+    background: var(--Gradient-Supersoft, linear-gradient(207deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%));
+}
 }
