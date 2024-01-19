@@ -796,7 +796,8 @@ label {
 
 .team-slider {
   padding: 80px 0 60px;
-
+  max-width: 1600px;
+  margin: auto;
   .owl-carousel {
     width: 100%;
     margin: auto;
@@ -882,6 +883,8 @@ label {
 }
 
 .partners {
+  
+
   .title {
     text-align: center;
     color: #323264;
@@ -892,7 +895,76 @@ label {
     text-transform: uppercase;
     margin-bottom: 30px;
   }
+
+  &-item__list {
+    display: grid;
+    width: 100%;
+  }
+
+  &-item {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+.bg-blue {
+  background-color: #1c4280;
+}
+
+.bg-dark-green {
+  background-color: #143646;
+}
+
+.bg-orange-gradient {
+  background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+}
+
+.bg-violet {
+  background-color: #9E4DC3;
+}
+
+.bg-orange {
+  background-color: #FD9339;
+}
+
+.bg-lightgray {
+  background-color: #E2E2E4;
+}
+
+.bg-red {
+  background-color: #C71C36;
+}
+
+.bg-lightblue {
+  background-color: #DCF3F9;
+}
+
+.bg-gray {
+  background-color: #EAEAEA;
+}
+
+.bg-dark-violet {
+  background-color: #282240;
+}
+
+.bg-dark-blue {
+  background-color: #1D4568;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.publications {
+  background-color: #F5F5FA;
+}
+
+
+
+
 
 
 
@@ -1078,6 +1150,15 @@ label {
   .team-slider .owl-item .team-info .team-title {
     font-size: 30px;
   }
+
+  .partners {
+
+    &-item__list {
+    max-height: calc(120px * 6);
+    overflow-y: auto;
+  }
+
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px) {
@@ -1201,6 +1282,16 @@ label {
     max-height: 500px;
     border-radius: 12px 12px 0px 0px;
   }
+
+  .partners {
+
+    &-item__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  }
+
+  
 }
 
 .gap-15 {
@@ -1269,6 +1360,18 @@ label {
       border-radius: 12px 0 0 12px;
     }
   }
+
+  .partners {
+
+    &-item__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &-item {
+      max-width: 256px;
+    }
+
+  }
 }
 
 @media (min-width: 1025px) {
@@ -1278,6 +1381,15 @@ label {
       max-height: 344px;
       max-width: 400px;
     }
+  }
+
+  
+  .partners {
+
+    &-item {
+      max-width: 360px;
+    }
+
   }
 }
 
@@ -1298,6 +1410,33 @@ label {
         max-height: 298px;
         max-width: 400px;
       }
+    }
+  }
+
+  .partners {
+    padding-bottom: 60px;
+    max-width: 1600px;
+    margin: auto;
+    border-radius: 12px;
+
+    .br-top-left {
+      border-radius: 12px 0 0 0;
+    }
+
+    .br-top-right {
+      border-radius: 0 12px 0 0;
+    }
+
+    .br-bot-right {
+      border-radius: 0 0 12px 0;
+    }
+
+    .br-bot-left {
+      border-radius: 0 0 0 12px;
+    }
+
+    &-item {
+      max-width: 430px;
     }
   }
 }
